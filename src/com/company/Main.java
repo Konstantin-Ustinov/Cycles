@@ -33,11 +33,8 @@ public class Main {
     }
 
     private static void task2(int friday) {
-        for (int i = 1; i <= 31; i++) {
-            if (i == friday) {
-                System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
-                friday += 7;
-            }
+        for (int i = friday; i <= 31; i += 7) {
+            System.out.println("Сегодня пятница, " + i + "-е число. Необходимо подготовить отчет.");
         }
     }
 
